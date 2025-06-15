@@ -3,9 +3,169 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>B10</title>
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/2dd7473bae.js" crossorigin="anonymous"></script>
+    <!-- Daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- TailwindCSS  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+        theme: {
+            extend: {
+            colors: {
+                clifford: '#da373d',
+                'color-primary':'#ABEF5F',
+            }
+            }
+        }
+        }
+    </script>
+    <!-- Manrope Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <style>
+        .font-manrope{
+            font-family: "Manrope", sans-serif;
+        }
+    </style>
 </head>
 <body>
-    <h1>dffgfg</h1>
+    <header>
+        <section class="md:container mx-auto font-manrope">
+        <div class="navbar bg-base-100 shadow-sm flex items-center justify-between">        
+            <div>
+                <div class="navbar-center lg:flex">
+                <div class="items-center">
+                <a href=""><i class="fa-regular fa-circle-right bg-color-primary text-black rounded-2xl text-xl"></i></a>
+                <a class="text-2xl font-bold pl-2 ">Rinterio</a>
+
+                </div>
+                <ul class="menu menu-horizontal px-1 hidden lg:flex ml-20">
+                <li><a>Home</a></li>
+                <li><a>Services</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>Blogs</a></li>
+                <li><a>Contact Us</a></li>
+                </ul>
+            </div>
+            </div>
+            <div>
+                <div class="flex">
+                <div class="invisible lg:visible">
+                <label class="input">
+                <svg class="h-[2em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <g
+                    stroke-linejoin="round"
+                    stroke-linecap="round"
+                    stroke-width="2.5"
+                    fill="none"
+                    stroke="currentColor"
+                    >
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="m21 21-4.3-4.3"></path>
+                    </g>
+                </svg>
+                <input type="search" required class="w-2" />
+                </label>
+            </div>
+            <div class="invisible lg:visible">
+                <div class="flex-none">
+                <div class="dropdown dropdown-end">
+                <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                    <div class="indicator">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /> </svg>
+                    <span class="badge badge-sm indicator-item">8</span>
+                    </div>
+                </div>
+                <div
+                    tabindex="0"
+                    class="card card-compact dropdown-content bg-base-100 z-1 mt-3 w-52 shadow">
+                    <div class="card-body">
+                    <span class="text-lg font-bold">8 Items</span>
+                    <span class="text-info">Subtotal: $999</span>
+                    <div class="card-actions">
+                        <button class="btn btn-primary btn-block">View cart</button>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div class="invisible lg:visible">
+                <div class="items-center bg-color-primary rounded-2xl px-2 mx-2 py-1">
+                <a class="md:text-sm  lg:text-2xl font-bold pl-2">Book Consult</a>
+                <a href=""><i class="fa-regular fa-circle-right bg-color-primary text-black rounded-2xl text-xl"></i></a>
+                </div>
+            </div>
+            </div>
+            <div class="navbar-end lg:flex">
+                <div class="dropdown ">
+                <div tabindex="0" role="button" class="btn btn-square btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block h-5 w-5 stroke-current"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path> </svg>
+                </div>
+                <ul
+                    tabindex="0"
+                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                    <li><a>Home</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Portfolio</a></li>
+                    <li><a>Blogs</a></li>
+                    <li><a>Contact Us</a></li>
+                    <div>
+                        <div class="flex-none">
+                        <div class="dropdown dropdown-end">
+                        <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                            <div class="indicator">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /> </svg>
+                            <span class="badge badge-sm indicator-item">8</span>
+                            </div>
+                        </div>
+                        <div
+                            tabindex="0"
+                            class="card card-compact dropdown-content bg-base-100 z-1 mt-3 w-52 shadow">
+                            <div class="card-body">
+                            <span class="text-lg font-bold">8 Items</span>
+                            <span class="text-info">Subtotal: $999</span>
+                            <div class="card-actions">
+                                <button class="btn btn-primary btn-block">View cart</button>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div>
+                        <label class="input">
+                        <svg class="h-[2em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <g
+                            stroke-linejoin="round"
+                            stroke-linecap="round"
+                            stroke-width="2.5"
+                            fill="none"
+                            stroke="currentColor"
+                            >
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.3-4.3"></path>
+                            </g>
+                        </svg>
+                        <input type="search" required class="w-2" />
+                        </label>
+                    </div>
+                    <div class="items-center bg-color-primary rounded-2xl px-2 mx-2 py-1">
+                    <a class="text-2xl font-bold pl-2 text-sm">Book Consult</a>
+                    <a href=""><i class="fa-regular fa-circle-right bg-color-primary text-black rounded-2xl text-sm"></i></a>
+                    </div>
+                </ul>
+                </div>
+            </div>
+            </div>
+        </div>
+        </section>
+    </header>
 </body>
 </html>
